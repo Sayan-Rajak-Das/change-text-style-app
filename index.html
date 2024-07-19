@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Style App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Change Text Style App</h1>
+        <div class="content">
+            <textarea id="text-input" placeholder="New Text"></textarea>
+            <div class="controls">
+                <label for="font-family">Font Family:</label>
+                <select id="font-family">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                    <option value="Palatino Linotype">Palatino Linotype</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                </select>
+
+                <div class="text-size-controls">
+                    <label for="text-size">Text Size:</label>
+                    <button onclick="changeTextSize('down')">-</button>
+                    <select id="text-size">
+                        <option value="12px">12px</option>
+                        <option value="14px">14px</option>
+                        <option value="16px">16px</option>
+                        <option value="18px">18px</option>
+                        <option value="20px">20px</option>
+                        <option value="22px">22px</option>
+                        <option value="24px">24px</option>
+                        <option value="26px">26px</option>
+                        <option value="28px">28px</option>
+                        <option value="30px">30px</option>
+                    </select>
+                    <button onclick="changeTextSize('up')">+</button>
+                </div>
+
+                <label for="text-color">Text Color:</label>
+                <select id="text-color">
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="orange">Orange</option>
+                    <option value="gray">Gray</option>
+                    <option value="brown">Brown</option>
+                    <option value="teal">Teal</option>
+                    <option value="navy">Navy</option>
+                </select>
+                
+                <button onclick="addText()">Add Text</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

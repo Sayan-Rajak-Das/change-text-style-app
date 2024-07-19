@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    animation: backgroundChange 5s infinite alternate;
+}
+
+@keyframes backgroundChange {
+    0% { background-color: #f0f0f0; }
+    50% { background-color: #cce7ff; }
+    100% { background-color: #ffcccb; }
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background: conic-gradient(red, orange, yellow, green, blue);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+}
+
+textarea {
+    width: 300px;
+    height: 225px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fceded;
+    border: 1px dotted #ccc;
+    font-size: 16px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.controls label {
+    margin-bottom: 5px;
+}
+
+.controls select, .controls button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #fbdcdc;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.controls select:hover, .controls button:hover {
+    background-color: #ffebeb;
+    border-color: #888;
+}
+
+.size-control {
+    display: flex;
+    align-items: center;
+}
+
+.size-control button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.size-control button:hover {
+    background-color: #78d7fa;
+    border-color: #888888;
+}
