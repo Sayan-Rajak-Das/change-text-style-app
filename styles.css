@@ -88,3 +88,19 @@ textarea {
     background-color: #78d7fa;
     border-color: #888888;
 }
+
+/* Style for the undo and redo buttons */
+#undo-btn, #redo-btn {
+    margin: 10px 5px; 
+    padding: 5px 8px; 
+    font-size: 14px; 
+    border-radius: 5px;
+    background-color: #fbdcdc;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#undo-btn:hover, #redo-btn:hover {
+    background-color: #ffebeb;
+    border-color: #888;
+}
